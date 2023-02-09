@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+
+
+/* Navbar */
+.navbar-brand {
+  font: 32px Viga;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Info Panel */
+.info-panel {
+  background-color: white;
+  padding: 30px;
+  margin-top: -120px;
+  border-radius: 12px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.info-panel h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.info-panel p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #acacac;
+}
+
+
+
+
+
+
+/* Utility */
+.tombol {
+  border-radius: 0px;
+  background-color: #78EAFF;
+  border: 0ch;   
+}
+
+.tombol:hover{
+  background-color: #78EAFF;
+}
+
+.type-badge {
+  border-radius: 0;
+  --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 231.68px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.card-image {
+  width: 913px;
+  height: 615px;
+}
+
+.card-image-headline {
+  width: 100%;
+  height: 370px;
+}
+
+.display-6 {
+  /* font-weight: 600; */
+  color: #092474;
+  font-family: "Beausite";
+}
+
+.primary-color {
+  color: #092474;
+}
+
+
+
+.stretched-link {
+  text-transform: uppercase;
+  font-size: 12px ;
+  font-family: "IBMPlex" ;
+}
+
+
+.card-title {
+  font-family: "Beausite";
+  font-size: 28px ;
+}
+
+.text-start {
+  font-family: "Beausite";
+  font-size: 16px ;
+}
+
+.card-text {
+  font-family: "Beausite";
+  font-size: 12px ;
+  color: #5D5D5D;
+}
+
+.text-heading {
+  font-family: "Beausite";
+  color: #092474;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.text-content {
+  font-family: "Beausite";
+  color: #a5a5a5;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+  .navbar {
+      padding-top: 20px;
   }
-}
+  
+  /* .navbar-brand, .nav-link {
+      color: white !important;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+  } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .nav-link {
+      /* text-transform: uppercase; */
+      margin-right: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #78EAFF;
+      margin: auto;
+      margin-bottom: -8px;
+      width: 50%;
+      padding-top: 5px;
   }
+
+
+
 }

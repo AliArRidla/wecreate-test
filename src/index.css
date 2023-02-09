@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Beausite";
+  src: local("Beausite"),
+   url("./Components/fonts/BeausiteClassicMedium.ttf") format("truetype");
+  font-weight: medium;
+  }
+
+@font-face {
+  font-family: "IBMPlex";
+  src: local("IBMPlex"),
+    url("./Components/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: regular;
+  }
